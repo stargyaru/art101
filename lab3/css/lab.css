@@ -1,44 +1,45 @@
-h1, h2, h3 {
-    color: pink;
-    font-family: cursive;
-    font-size: 150%;
+body{
+    background-image: radial-gradient(circle at bottom, rgb(4, 4, 21) 0, black 100%), url('stars.png');
+    height: 100vh;
+    overflow: hidden;
+    background-position: bottom right,
+        left,
+        right;
 }
 
-p {
-  color: pink;
-  font-family: cursive;
-  font-size: 100%;
-  text-indent: 20px;
-  margin-left: 10px;
+#stars{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    background-image: url("stars.png");
+    background-repeat: repeat-x;
+    animation: animStar 120s linear infinite;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: space;
+    background-size: cover;
+    overflow: hidden;
 }
 
-#content {
-    background-color: #6471cf;
-    width: 500px;
-    min-height: 300px;
-    padding: 10px;
-    margin: 10px;
-    border: solid 1px #;
-    font-size: 20px;
+#hearts{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    background-image: url("hearts.png");
+    background-repeat: repeat-x;
+    animation: animStar 80s linear infinite;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: space;
+    background-size: cover;
+    overflow: hidden;
 }
-#lab3summary {
-    background-color: #6471cf;
-    width: 500px;
-    min-height: 300px;
-    padding: 10px;
-    margin: 10px;
-    border: solid 1px #;
-    font-size: 20px;
-  }
-#vesper {
-  width: 220px;
-}
-#annalivia {
-    width: 200px;
-}
-#filestructure {
-    width:200px;
-}
-#screenshot1, #screenshot2, #screenshot3, #screenshot4, #screenshot5, #screensh {
-    width: 500px;
+
+@keyframes animStar {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-1080px);
+    }
 }
