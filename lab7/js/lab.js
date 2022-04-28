@@ -7,10 +7,9 @@
 
 //sortUserName - a function that takes user input and sorts the
 //letters of their name
-["Foo", "bar"].sort(function (a, b) {
-    return a.toLowerCase().localeCompare(b.toLowerCase());
-});
+
 function sortUserName() {
+
   var userName = window.prompt("Hi. Please tell me your name so that I can fix it.");
   console.log("userName =", userName);
   //split string into array
